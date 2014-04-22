@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		454F08B71904C1E400B9DA16 /* HTFMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 454F08B61904C1E400B9DA16 /* HTFMDatabase.m */; };
+		45AB24E01906111800A34720 /* HTDatabaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AB24DF1906111800A34720 /* HTDatabaseService.m */; };
+		45AB24E51906114A00A34720 /* HTSQLBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AB24E21906114A00A34720 /* HTSQLBuffer.m */; };
+		45AB24E61906114A00A34720 /* HTMutableSQLBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AB24E41906114A00A34720 /* HTMutableSQLBuffer.m */; };
+		45AB24EA1906125500A34720 /* HTDatabaseResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AB24E91906125500A34720 /* HTDatabaseResultSet.m */; };
 		45AC5B8519021F16002F6874 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45AC5B8419021F16002F6874 /* Foundation.framework */; };
 		45AC5B8719021F16002F6874 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45AC5B8619021F16002F6874 /* CoreGraphics.framework */; };
 		45AC5B8919021F16002F6874 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45AC5B8819021F16002F6874 /* UIKit.framework */; };
@@ -43,6 +47,15 @@
 /* Begin PBXFileReference section */
 		454F08B51904C1E400B9DA16 /* HTFMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTFMDatabase.h; sourceTree = "<group>"; };
 		454F08B61904C1E400B9DA16 /* HTFMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTFMDatabase.m; sourceTree = "<group>"; };
+		45AB24DE1906111800A34720 /* HTDatabaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDatabaseService.h; sourceTree = "<group>"; };
+		45AB24DF1906111800A34720 /* HTDatabaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDatabaseService.m; sourceTree = "<group>"; };
+		45AB24E11906114A00A34720 /* HTSQLBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTSQLBuffer.h; sourceTree = "<group>"; };
+		45AB24E21906114A00A34720 /* HTSQLBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTSQLBuffer.m; sourceTree = "<group>"; };
+		45AB24E31906114A00A34720 /* HTMutableSQLBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMutableSQLBuffer.h; sourceTree = "<group>"; };
+		45AB24E41906114A00A34720 /* HTMutableSQLBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMutableSQLBuffer.m; sourceTree = "<group>"; };
+		45AB24E7190611D800A34720 /* HTFMDatabaseLogicType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTFMDatabaseLogicType.h; sourceTree = "<group>"; };
+		45AB24E81906125500A34720 /* HTDatabaseResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDatabaseResultSet.h; sourceTree = "<group>"; };
+		45AB24E91906125500A34720 /* HTDatabaseResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDatabaseResultSet.m; sourceTree = "<group>"; };
 		45AC5B8119021F16002F6874 /* SqliteWalDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SqliteWalDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45AC5B8419021F16002F6874 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		45AC5B8619021F16002F6874 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -136,6 +149,15 @@
 		45AC5B8A19021F16002F6874 /* SqliteWalDemo */ = {
 			isa = PBXGroup;
 			children = (
+				45AB24E81906125500A34720 /* HTDatabaseResultSet.h */,
+				45AB24E91906125500A34720 /* HTDatabaseResultSet.m */,
+				45AB24E7190611D800A34720 /* HTFMDatabaseLogicType.h */,
+				45AB24E11906114A00A34720 /* HTSQLBuffer.h */,
+				45AB24E21906114A00A34720 /* HTSQLBuffer.m */,
+				45AB24E31906114A00A34720 /* HTMutableSQLBuffer.h */,
+				45AB24E41906114A00A34720 /* HTMutableSQLBuffer.m */,
+				45AB24DE1906111800A34720 /* HTDatabaseService.h */,
+				45AB24DF1906111800A34720 /* HTDatabaseService.m */,
 				454F08B51904C1E400B9DA16 /* HTFMDatabase.h */,
 				454F08B61904C1E400B9DA16 /* HTFMDatabase.m */,
 				45AC5B9319021F16002F6874 /* AppDelegate.h */,
@@ -295,9 +317,13 @@
 			files = (
 				45AC5B9B19021F16002F6874 /* ViewController.m in Sources */,
 				45AC5BC719021F58002F6874 /* FMDatabasePool.m in Sources */,
+				45AB24E51906114A00A34720 /* HTSQLBuffer.m in Sources */,
+				45AB24E61906114A00A34720 /* HTMutableSQLBuffer.m in Sources */,
 				45AC5B9519021F16002F6874 /* AppDelegate.m in Sources */,
 				454F08B71904C1E400B9DA16 /* HTFMDatabase.m in Sources */,
+				45AB24E01906111800A34720 /* HTDatabaseService.m in Sources */,
 				45AC5BC819021F58002F6874 /* FMDatabaseQueue.m in Sources */,
+				45AB24EA1906125500A34720 /* HTDatabaseResultSet.m in Sources */,
 				45AC5B9119021F16002F6874 /* main.m in Sources */,
 				45AC5BC519021F58002F6874 /* FMDatabase.m in Sources */,
 				45AC5BC919021F58002F6874 /* FMResultSet.m in Sources */,
